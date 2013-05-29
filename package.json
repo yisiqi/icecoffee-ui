@@ -1,0 +1,49 @@
+{
+	
+	  "name"				: "icecoffee-ui"
+	, "version"				: "2.1.0"
+	, "keywords"			: [
+		  "javascript"
+		, "flex"
+	  ]
+	, "description"			: "iceCoffee UI v2.1.0"
+	, "homepage"			: "http://yisiqi.github.io/icecoffee-ui/"
+	, "author"				: "Siqi Yi"
+	, "licenses"			: [
+		{
+			  "type"	: "MIT"
+			, "url"		: "https://github.com/yisiqi/icecoffee-ui/blob/master/LICENSE-MIT"
+		}
+	  ]
+
+	, "scripts": { "test": "make test" }
+	
+	, "repository": {
+		  "type": "git"
+		, "url"	: "https://github.com/yisiqi/icecoffee-ui.git"
+	  }
+	, "bugs": {
+		  "url"	: "https://github.com/yisiqi/icecoffee-ui/issues"
+	  }
+
+	, "dependenceies"		: {
+		  "jquery"		: "~1.7.2"
+	  }
+
+	, "devDependencies"		: {
+
+		  "grunt"					: "~0.4.1"
+		, "grunt-contrib-clean"		: "~0.4.1"
+		, "grunt-contrib-jshint"	: "~0.5.4"
+		, "grunt-contrib-watch"		: "~0.4.3"
+		, "grunt-contrib-uglify"	: "~0.2.1"
+		, "grunt-contrib-qunit"		: "~0.2.1"
+		, "grunt-contrib-livereload": "0.1.2"
+
+		, "grunt-develop"			: "~0.0.2"
+
+	  }
+
+	, "readme"				: "# iceCoffee UI"
+	, "readmeFileName"		: "README.md"
+}
