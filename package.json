@@ -44,6 +44,6 @@
 
 	  }
 
-	, "readme"				: "# iceCoffee UI"
+	, "readme"				: "# iceCoffee UI [![Build Status](https://travis-ci.org/yisiqi/icecoffee-ui.png?branch=master)](https://travis-ci.org/yisiqi/icecoffee-ui)"
 	, "readmeFileName"		: "README.md"
 }
