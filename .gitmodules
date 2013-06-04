@@ -4,3 +4,6 @@
 [submodule "lib/bootstrap"]
 	path = lib/bootstrap
 	url = https://github.com/twitter/bootstrap.git
+[submodule "lib/jquery-mockjax"]
+	path = lib/jquery-mockjax
+	url = https://github.com/appendto/jquery-mockjax.git
