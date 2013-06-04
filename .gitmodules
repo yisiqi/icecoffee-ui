@@ -13,3 +13,6 @@
 [submodule "lib/todc-select2"]
 	path = lib/todc-select2
 	url = https://github.com/todc/todc-select2.git
+[submodule "lib/todc-datepicker"]
+	path = lib/todc-datepicker
+	url = https://github.com/todc/todc-datepicker.git
