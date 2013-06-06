@@ -13,22 +13,33 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		  pkg		: grunt.file.readJSON('package.json')
-		//*
-		, build		:{
-			  all		: {
-			  	  src	: {}
-			  	, dest	: {}
+		/*
+		, 'build'		:{
+			  'all'		: {
+			  	  'src'	: {}
+			  	, 'dest'	: {}
 			  }
-			, core		: {}
-			, bootstrap	: {}
+			, 'core'		: {}
+			, 'bootstrap'	: {}
 		  }
 		//*/
 
-		, qunit		: {
+		, connect		: {
+			  server	: {
+			  	  options	: {
+			  	  	  port	: 8099
+			  	  	, base	: './test'
+			  	  }
+			  }
+		}
 
-			  'bootstrap'			: ['lib/bootstrap/js/tests/*.html']
-			, 'jquery'				: ['lib/bootstrap/js/tests/*.html']
-			, 'bootstrap-extend'	: ['lib/bootstrap/js/tests/*.html']
+		, qunit		: {
+			   bootstrap_extend	: {
+				  files : [
+				  	  {src	: 'test/**/*.html'}
+				  ]
+			   }
+
 		  }
 
 		, jshint	: {
@@ -49,7 +60,7 @@ module.exports = function(grunt) {
 			, 'bootstrap'			: ['lib/bootstrap/js/*.js']
 			, 'jquery'				: ['lib/jquery/src/*.js']
 
-			, 'bootstrap-extend'	: ['modules/bootstarp-extend/*.js']
+			, 'bootstrap-extend'	: ['src/bootstrap-extend/*.js']
 		  }
 		/*
 		, uglify	: {
@@ -67,8 +78,10 @@ module.exports = function(grunt) {
 		//*/
 	});
 
-	grunt.registerTask('default', ['build']);
+	grunt.registerTask('default', ['qunit']);
+	grunt.registerTask('test', ['qunit']);
 
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks("grunt-contrib-qunit");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
