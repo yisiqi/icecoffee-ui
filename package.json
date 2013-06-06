@@ -16,7 +16,7 @@
 		}
 	  ]
 
-	, "scripts": { "test": "grunt qunit" }
+	, "scripts": { "test": "grunt test" }
 	
 	, "repository": {
 		  "type": "git"
