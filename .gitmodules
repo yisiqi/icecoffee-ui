@@ -19,3 +19,6 @@
 [submodule "lib/select2"]
 	path = lib/select2
 	url = https://github.com/ivaynberg/select2.git
+[submodule "lib/qunit"]
+	path = lib/qunit
+	url = https://github.com/jquery/qunit.git
