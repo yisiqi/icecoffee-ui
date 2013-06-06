@@ -3,7 +3,7 @@ node_js:
   - "0.8"
 
 before_script:
+  - npm install -g grunt-cli
   - cd lib/jquery
   - grunt
   - cd -
-  - npm install -g grunt-cli
